@@ -31,7 +31,7 @@ cat << EOF > "desktop/desktop.desktop"
 Version=0.1.0
 Type=Application
 Terminal=false
-Exec=/usr/local/bin/${name}
+Exec=/usr/local/bin/${command_name}
 Name=${fancy_name}
 Comment=${fancy_name} Unofficial electron client for Desktop
 Icon=/usr/local/share/icons/${name}.png
@@ -48,11 +48,13 @@ EOF
 main() {
 
 name="$1"
-fancy_name="$2"
-url="$3"
-wm_class_last_digits="$4"
+command_name="$2"
+fancy_name="$3"
+url="$4"
+wm_class_last_digits="$5"
 
 echo $name
+echo $command_name
 echo $fancy_name
 echo $url
 echo $wm_class_last_digits

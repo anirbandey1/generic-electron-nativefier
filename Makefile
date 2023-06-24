@@ -1,11 +1,11 @@
 name="leetcode-electron"
-command="leetcode-electron"
+command_name="leetcode-electron"
 fancy_name="Leetcode"
 url="https://leetcode.com/problemset/all"
 wm_class_last_digits="9c6b9a"
 
 prepare :
-	./script.sh "${name}" "${fancy_name}" "${url}" "${wm_class_last_digits}"
+	./script.sh "${name}" "${command_name}" "${fancy_name}" "${url}" "${wm_class_last_digits}"
 	npm install
 	npm run build
 
@@ -16,12 +16,12 @@ install :
 	mkdir -pv /usr/local/share/icons
 	cp ./desktop/desktop.desktop /usr/local/share/applications/${name}.desktop
 	cp ./desktop/icon.png /usr/local/share/icons/${name}.png
-	ln -sv /opt/${name}/${name}-linux-x64/${command} /usr/local/bin/${command}
+	ln -sv /opt/${name}/${name}-linux-x64/${name} /usr/local/bin/${command_name}
 
 
 clean :
 	rm -rfv /opt/${name}
 	rm -fv /usr/local/share/applications/${name}.desktop
 	rm -fv /usr/local/share/icons/${name}.png
-	unlink /usr/local/bin/${command}
+	unlink /usr/local/bin/${command_name}
 	
