@@ -1,0 +1,12 @@
+{
+  "name":"leetcode-electron",
+  "version":"0.1.0",
+  "main":"main.js",
+  "scripts":{
+    "start":"electron .",
+    "build":"nativefier --name 'leetcode-electron' --icon 'desktop/icon.png' 'https://leetcode.com/problemset/all'"
+  },
+  "dependencies":{
+    "electron":"^25.2.0",
+    "nativefier":"^50.1.1"}
+}
