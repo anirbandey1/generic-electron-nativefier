@@ -2,6 +2,7 @@ name="leetcode-electron"
 command="leetcode-electron"
 
 prepare :
+	./script.sh
 	npm install
 	npm run build
 

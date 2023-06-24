@@ -6,5 +6,4 @@ Exec=/usr/local/bin/leetcode-electron
 Name=Leetcode
 Comment=Leetcode Unofficial electron client for Desktop
 Icon=/usr/local/share/icons/leetcode-electron.png
-StartupWMClass=leetcode-electron-nativefier-9028de
-
+StartupWMClass=leetcode-electron-nativefier-9c6b9a
