@@ -1,4 +1,4 @@
-<h1 align="center"> ChatGPT electron app </h1> 
+<h1 align="center">Generic electron app Nativefier</h1> 
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
@@ -35,8 +35,8 @@
 ### Install
 
 ```sh
-git clone https://github.com/anirbandey1/chatgpt-electron.git
-cd chatgpt-electron
+git clone https://github.com/anirbandey1/generic-electron-nativefier.git
+cd generic-electron-nativefier
 make prepare
 sudo make install
 ```
