@@ -32,6 +32,11 @@
 
 ## Getting Started
 
+### Dependencies
+
+- nodejs
+- npm
+
 ### Install
 
 ```sh
