@@ -47,14 +47,20 @@ EOF
 
 main() {
 
-name="leetcode-electron"
-fancy_name="Leetcode"
-url="https://leetcode.com/problemset/all"
-wm_class_last_digits="9c6b9a"
+name="$1"
+fancy_name="$2"
+url="$3"
+wm_class_last_digits="$4"
+
+echo $name
+echo $fancy_name
+echo $url
+echo $wm_class_last_digits
+
 
 generate_package_json
 generate_desktop_entry
 
 }
 
-main
+main "$@"

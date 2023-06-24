@@ -1,8 +1,11 @@
 name="leetcode-electron"
 command="leetcode-electron"
+fancy_name="Leetcode"
+url="https://leetcode.com/problemset/all"
+wm_class_last_digits="9c6b9a"
 
 prepare :
-	./script.sh
+	./script.sh "${name}" "${fancy_name}" "${url}" "${wm_class_last_digits}"
 	npm install
 	npm run build
 
